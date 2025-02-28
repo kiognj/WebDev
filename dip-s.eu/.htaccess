@@ -1,0 +1,13 @@
+# Enable Rewrite Engine for URL Rewriting
+RewriteEngine On
+
+# Force HTTPS (with extra protection)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Friendly URLs
+RewriteRule ^about-us/?$ about-us.php [L]
+RewriteRule ^contacts/?$ contacts.php [L]
+RewriteRule ^services/?$ services.php [L]
+RewriteRule ^team/?$ team.php [L]

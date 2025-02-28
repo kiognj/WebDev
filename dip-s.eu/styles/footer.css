@@ -1,0 +1,24 @@
+/* Footer Styling */
+footer {
+    background-color: #424243;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ee1d23;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 1s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
